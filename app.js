@@ -1,5 +1,4 @@
 const signUpForm = document.getElementById("signup");
-const signInForm = document.getElementById("signin");
 const icon = document.getElementById("toggle")
 const icon2= document.getElementById("toggle2")
 const icon3= document.getElementById("toggle3")
@@ -142,7 +141,7 @@ const formSignUp = (e) =>{
       <html>
       <head>
         <title>User Details</title>
-        <link rel="stylesheet" href="../styles.css">
+        <link rel="stylesheet" href="./styles.css">
       </head>
       <body class="signin-body">
         <div class="container user-details" id="user-details">
@@ -162,39 +161,7 @@ const formSignUp = (e) =>{
       document.open();
       document.write(newPageContent);
       document.close();
-
-    // Variables for the sign-in details
-    const signInEmail = document.getElementById("signin-mail").value
-    const signInPassword = document.querySelector("signin-password").value
-
-    if (signInEmail === signUpEmail && signInPassword === signUpPassword) {
-      signInError.style.display = "none";
-      button.disabled =false;
-    } else {
-      signInError.innerHTML ="User does not exist. Please sign up.";
-      signInError.classList.add("error");
-      button.disabled =true;
-    }
-
 }
 
-// const signInDetails = () =>{
-//     const signInPassword = document.getElementById("retype-password").value;
-//     const signInEmail = document.getElementById("email").value;
-//     const signUpEmail = document.getElementById("signup-email").value;
-//     const signUpPassword = document.getElementById("password").value;
-//     const signInError = document.getElementById("signin-error")
-
-//     if (signInEmail === signUpEmail && signInPassword === signUpPassword) {
-//       signInError.style.display = "none";
-//       button.disabled =false;
-//     } else {
-//       signInError.innerHTML ="User does not exist. Please sign up.";
-//       signInError.classList.add("error");
-//       button.disabled =true;
-//     }
-// }
-// signInForm.addEventListener("submit", signInDetails)
-// signInForm.addEventListener("submit" , userInfo)
-signInForm.addEventListener("submit" , formSignUp)
+signUpForm.addEventListener("submit" , formSignUp)
 
