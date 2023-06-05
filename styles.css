@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+}
+body{
+    background-color: #066cc5;
+}
+#wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.logo-div{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 0%;
+    left: 0%;
+}
+.logo-div img{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.container{
+    padding-bottom: 1px;
+    position: relative;
+    width: 50%;
+    max-width: 500px;
+    margin: auto;
+    padding-top: 8rem ;
+    padding-right: 0;
+}
+.heading{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 36.5625px;
+}
+.small-text{
+    text-align: center;
+    margin: 0.5rem 0;
+    font-size: 17px;
+}
+form{
+    margin: 4rem auto;
+    max-width: 450px;
+    
+}
+.input-div{
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.input-div input:not([type="url"]){
+    max-width: 450px;
+    border: none;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 10px 10px 50px;
+    border: 2px solid #b9e9ef;
+    border-radius: 4px;
+    color: black;
+    transition:all .5s ease-in-out;
+}
+i:first-child{
+    color: black;
+}
+i#check-icon , i#checked-icon{
+    color: rgb(91, 191, 91);
+    cursor: pointer;
+    padding: 10px 10px;
+    position: absolute;
+    font-size: 16px;
+    right: 30px;
+    top: 2px;
+    display: none;
+    background-color: transparent;
+
+}
+i:last-child{
+    position: absolute;
+    left: 0;
+    top: 1px;
+    padding: 10px 10px;
+    font-size: 18px;
+    background-color: #b9e9ef;
+    color: black;
+    transition:all .5s ease-in-out;
+    border-radius: 4px 0 0 4px;
+}
+.eye-icon{
+    cursor: pointer;
+    padding: 10px 10px;
+    position: absolute;
+    font-size: 13px;
+    right: 0 ;
+    top: 2px;
+}
+
+.error{
+    color: black;
+    font-weight: 400;
+    padding: 10px;
+    background-color: #ffc0c7;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+}
+.match{
+    color: black;
+    font-size: 14px;
+    margin-top: 0.5rem;
+    background-color: rgb(125, 251, 125);
+}
+.input-div input:not([type="url"]):focus ~i {
+    background-color: #04132e;
+    transition: .5s ease-in-out;
+    color: white;
+}
+
+.input-div input:not([type="url"]):focus{
+    border: 2px solid #04132e;
+    transition: .5s ease-in-out;
+    box-shadow:2px 1px #04132e;
+}
+.flexInput{
+    display: flex;
+    justify-content: space-between;
+}
+.flexInput .input-div{
+    width: 45%;
+}
+h4{
+    font-size: 20px;
+}
+.radio-box{
+    display: flex;
+}
+.radio-box div{
+    margin:1rem 5rem 0 0;
+}
+.select-box select{
+    margin-top: 2rem;
+    padding: 5px;
+    width: 100%;
+    color: black;
+    font-size: 17px;
+}
+option{
+    color: black;
+}
+
+.btn-div{
+    margin: 5rem 0 0;
+}
+.btn-div button{ 
+    cursor: pointer;
+    border: none; 
+    border-radius:4px ;
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    letter-spacing: 4px;
+    color: white;
+    background-color: #04132e;
+    transition: all 0.5s ease-in-out;
+}
+.btn-div button:hover{
+    opacity: 0.8;
+}
+.signin-text{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 15px;
+}
+.signin-text a{
+    color: #04132e;
+    text-decoration: none;
+}
+.user-details h1{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 29.25px;
+    font-weight: 500;
+    line-height: 36.5625px;
+}
+.user-details p{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 1rem;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+footer p{
+    font-weight: 400;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    margin-top: 5rem;
+}
+.img-div{
+    background-color: #b7ceda;
+    width: 50%;
+    background-image: url("./images/Blue.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+}
+.img-div2{
+    background-color: #b7ceda;
+    width: 50%;
+    height: 100vh;
+    background-image: url("./images/Blue.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+/* Media Queries */
+/* Styles for screens smaller than 600 pixels wide */
+@media (max-width: 600px) {
+    .signup-body{   
+            height: auto;
+            background-image: linear-gradient(to bottom, #3498db, #2c3e50);
+            background-size: 100% 100%;
+        }
+    .signin-body{   
+            height: 100vh;
+            background-image: linear-gradient(to bottom, #3498db, #2c3e50);
+            background-size: 100% 100%;
+        }
+    .container {
+            max-width: 600px;
+            margin: auto;
+            width: 80%;
+            padding-top:5rem ;
+        }
+    
+        form {
+            max-width: 600px;
+            margin-top: 1rem;
+        }
+    
+        .logo {
+            display: block;
+            position: relative;
+            margin-bottom: 2rem ;
+            text-align: center;
+        }
+    
+        .heading {
+            font-size: 30px;
+            margin: 1rem auto 0;
+        }
+    
+        .small-text {
+            font-size: 17px;
+            margin-bottom: 5rem;
+        }
+        .flexInput{
+            display: block;
+        }
+        .flexInput .input-div{
+            width: 100%;
+        }
+        .input-div input:not([type="url"]) {
+            max-width: 500px;
+            border: none;
+            box-sizing: border-box;
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 10px 10px 10px 50px;
+            border: 2px solid #b9e9ef;
+            border-radius: 4px;
+            color: black;
+            transition: all .5s ease-in-out;
+        }
+        .img-div,
+        .img-div2 {
+            display: none;
+        }
+}
+
+/* Styles for screens between 601 and 900 pixels wide */
+@media (min-width: 601px) and (max-width: 900px) {
+    *{
+        color: black;
+    }
+    body {
+        background-image: radial-gradient(#066cc5, #ffffff); 
+    }
+    .container{
+        padding-top: 1rem;
+        max-width: 900px;
+        margin-top: 0;
+    }
+    form{
+        max-width: 900px;
+        margin:1rem auto 5rem;
+    }
+    .logo{
+        display: block;
+        position: relative;
+        margin:2rem auto;
+        text-align: center;
+    }
+    .heading{
+        font-size: 50px;
+        margin: 1rem auto;
+    }
+    .small-text{
+        font-size: 25px;
+        margin-bottom:5rem ;
+    }
+    .img-div,.img-div2{
+        display: none;
+    }
+}
+

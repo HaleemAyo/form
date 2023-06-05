@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://kit.fontawesome.com/a096b0b71b.js" crossorigin="anonymous"></script>
+</head>
+<body class="signup-body">
+    <div id="wrapper">
+        <div class="container">
+            <div class="logo-div">
+                <a href="./index.html">
+                    <img src="../images/Haleem.png" alt="logo">
+                </a>
+            </div>
+            <h1 class="heading"> Welcome!</h1>
+            <p class="small-text">Please enter your details</p>
+            <!-- Form Info -->
+            <form  id="signup"   >
+                <div class="flexInput">
+                    <div class="input-div">
+                        <input type="text" placeholder="First Name" name="fname" id="fname" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div class="input-div">
+                        <input type="text" placeholder="Last Name" name="lname" id="lname" required>
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+                <div class="input-div">
+                    <input type="text" placeholder="Username" name="username" id="username" oninput="checkUsernameLength()" required>
+                    <i class="fa-solid fa-check " id="check-icon"></i>
+                    <p id="username-message"></p>
+                    <i class="fa-solid fa-face-smile"></i>
+                </div>
+                <div class="input-div">
+                    <input type="email" placeholder="Email" name="email" id="mail-input" required>
+                    <p id="validation-text"></p>
+                    <i class="fa-sharp fa-solid fa-envelope"></i>
+                </div>
+                <div class="input-div">
+                    <i id="toggle" class="fa-solid fa-eye-slash eye-icon"></i>
+                    <i class="fa-solid fa-check " id="checked-icon"></i>
+                    <input type="password" placeholder="Password" name="password" id="password" oninput="checkPasswordStrength()"  required>    
+                    <p id="strenght-message"></p>
+                    <i class="fa-sharp fa-solid fa-lock"></i>
+                </div>
+                <div class="input-div">
+                    <i id="toggle2" class="fa-solid fa-eye-slash eye-icon"></i>
+                    <input type="password" placeholder="Confirm Password" name="confirm-password" id="retype-password" oninput="checkPasswordMatch()"  required>    
+                    <p id="error-message"></p>
+                    <i class="fa-sharp fa-solid fa-lock"></i>
+                </div>    
+                <!-- Gender -->
+                <h4>Gender</h4>
+                <div class="radio-box">
+                    <div>
+                        <input type="radio" name="gender" value="Female">
+                        <label for="css">Female</label>    
+                    </div>
+                    <div>
+                        <input type="radio"  name="gender" value="Male">
+                        <label for="html">Male</label>
+                    </div>
+                </div>
+                <!-- Select -->
+                <div class="select-box">
+                    <select id="countrySelect">
+                        <option value="">Country of Residence</option>
+                    </select>
+                </div>
+                <div class="btn-div">
+                    <button type="submit"  id="submitButton">Sign Up</button>
+                </div>
+                
+                <p class="signin-text">Have an account? <span><a href="./signIn.html">Sign In</a></span></p>
+            </form>
+
+            <footer>
+                <p>Copyright <span>&#169;</span> Dahunsi Haleem 2023</p>
+            </footer>
+        </div>
+    
+        <div class="img-div"></div>
+
+    </div>
+
+
+            <div class="user-info "></div>
+
+
+    <!-- JS LINK -->
+    <script src="../app.js"></script>
+</body>
+</html>
