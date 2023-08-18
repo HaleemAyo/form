@@ -210,7 +210,11 @@ footer p{
 .img-div{
     background-color: #b7ceda;
     width: 50%;
+<<<<<<< HEAD
     background-image: url("./assets/Blue.jpg");
+=======
+    background-image: url("./Blue.jpg");
+>>>>>>> 1caebbc58459cf3f799e557dbc503dd528579982
     background-repeat: repeat;
     background-size: cover;
 }
@@ -218,7 +222,11 @@ footer p{
     background-color: #b7ceda;
     width: 50%;
     height: 100vh;
+<<<<<<< HEAD
     background-image: url("./assets/Blue.jpg");
+=======
+    background-image: url("./Blue.jpg");
+>>>>>>> 1caebbc58459cf3f799e557dbc503dd528579982
     background-repeat: repeat;
     background-size: cover;
 }
